@@ -7,9 +7,44 @@
 </head>
 <body>
     <h1>Formulario</h1>
-    <form action="">
-        <label for="nombre">Nombre</label>
-        <input type="text">
+    <form action="/datobase" method="post"><!-- FORMULARIO -->
+        <!-- Action busca los datos en 'datobase' y el metodo mothod- los envia -->
+        <!-- el metodo "Post" no deja ver los datos enviamos en la barra de navegacion -->
+        <!-- Por ahora como no tenemos base de datos (backend) no usamos el action -->
+        <label for="Apellido">Apellido</label> <br><!-- br rompe linea , baja lo sgte --> 
+        <input type="text" id="Apellido" name="apellido" required>  <br> <!-- input -Agrega una celda para escribir -->
+        <!-- id --identificador unico, en este caoses apellido, hace que sea unico el valor -->
+        <!-- name - le da un nombre al valor que pongamos    -->
+        <!-- required -- obliga a rellenar el campo antes de enviarlo -->
+        <label for="nombre">Nombre</label>  <br>
+        <input type="text" id="nombre" name="nombre"><br>
+        <label for="dni">Dni</label> <br>
+        <input type="number" id="dni" name="dni" required> <br>
+
+        <label for="password">Password</label><br>
+        <input type="password" id="password" name="password" minlength="8"><br>
+        <!-- LONGITUD MINIMA DE 8 PARA LA CONTRASEÑA, HAC LO MISMO QU EL REQUIRED -->
+        <input type="submit" value="Enviar datos"><br> <!-- Agrega un boton de que envia datos-  submit -->
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" placeholder="name@gmail.com">
+        <!-- placeholder - muestra un modelo de rellenado -->
     </form>
+    <div>
+        <button>
+            <a href="../index.html#pie_de_pagina">ruta relativa</a><br>
+            <!-- ruta relativa -->
+        </button><br>
+        <button>
+            <a href="https://aulasvirtuales.frba.utn.edu.ar/course/view.php?id=27425" target="_blank">ruta absoluta</a><br>
+            <!-- ruta absoluta -->
+            <!-- target = _blank - abre la direccion en otra pagina -->
+        </button>
+    </div>
+    <img src="https://media.tycsports.com/files/2022/12/18/517330/lionel-messi_1440x810_wmk.webp?v=1" alt="Messi">
+    <img src="../assets/imagenes/MESSI (1).jpg" alt="Messi"
+    
 </body>
 </html>
+
+<!-- EITQUETAS DE BLOQUE- OCUPAN EL 100% DEL ANCHO, EJEMPLO H1 -->
+<!-- ETIQUETAS DE LINEA -- SOLO OCUPAN UN PEDASITO, SE PUEDEN PONER VARIAS COSAS A LA VES -->
